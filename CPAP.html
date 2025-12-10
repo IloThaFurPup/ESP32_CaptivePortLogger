@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f3f3f3;
+        }
+        h1 {
+            color: #b30000;
+        }
+        input {
+            display: block;
+            margin-bottom: 5px;
+            padding: 8px;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input.error {
+            border: 2px solid red;
+        }
+        .error-msg {
+            color: red;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 8px 16px;
+            background: #b30000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #e60000;
+        }
+        button  {
+            padding: 8px 15px;
+            background: #b30000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .rules {
+            font-size: 14px;
+            color: #555;
+        }
+        pre {
+            background: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<h1>User Sign Up</h1>
+<p>Please Sign up with new Account!</p>
+
+<form action="/signup" method="GET">
+  <input type="text" name="mail" placeholder="Mail (Ex: Example@domain.com)">
+  <input type="text" name="pwd" placeholder="Password">
+  <button type="submit">Sign Up!</button>
+</form>
+
+<pre>
+  |\__/,|   (`\
+_.|o o  |_   ) )
+-(((---(((--------
+</pre>
+<script>
+function validar() {
+    let correo = document.getElementById("correo").value;
+    let pass = document.getElementById("pass").value;
+
+    let correoMsg = document.getElementById("correo-msg");
+    let passMsg = document.getElementById("pass-msg");
+
+    // ----------- RESETEAR ESTILOS -----------
+    correoMsg.textContent = "";
+    passMsg.textContent = "Reglas: mínimo 8 caracteres, debe tener un número o un símbolo";
+    document.getElementById("correo").classList.remove("error");
+    document.getElementById("pass").classList.remove("error");
+
+    let valido = true;
+
+    // ----------- VALIDAR CORREO -----------
+    if (!(correo.includes("@") && correo.includes("."))) {
+        correoMsg.textContent = "Correo no válido :c";
+        document.getElementById("correo").classList.add("error");
+        valido = false;
+    }
+
+    // ----------- VALIDAR CONTRASEÑA -----------
+    let tieneNumero = /[0-9]/.test(pass);
+    let tieneSimbolo = /[!@#$%^&*()\-_=+{}[\]:;"',.<>/?]/.test(pass);
+    let largo = pass.length >= 8;
+
+    if (!largo || !(tieneNumero || tieneSimbolo)) {
+        document.getElementById("pass").classList.add("error");
+        let errores = [];
+        if (!largo) errores.push("mínimo 8 caracteres");
+        if (!(tieneNumero || tieneSimbolo)) errores.push("al menos un número o símbolo");
+        passMsg.textContent = "Reglas: " + errores.join(", ");
+        valido = false;
+    }
+
+    // Si todo está bien
+    if (valido) {
+        alert("¡Todo válido!");
+    }
+}
+</script>
+
+</body>
+</html>

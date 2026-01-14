@@ -1,5 +1,5 @@
 # ESP32_CaptivePortLogger
-Hey! All this was made by a Colombian Bisexual Furry soo... Make sure to respect them!
+Hey! All this was made by a Colombian Furry soo... Make sure to respect them!
 So: The ESP32 makes a Captive Portal that gets all information written and sends it by serial where the Python App writes and copies it in the log you made
 [EDUCATIONAL PURPOUSES ONLY PLEASE USE IT BY YOUR OWN RISK]
 I learned HTML (hints of JS and CSS), C++ and Python by my self so please support me! <333
@@ -7,6 +7,8 @@ Ilo here, please support me! ^w^
 IG: IloThaFurPup
 YouTube: IloThaFurPup, I teach about microcontrollers
 Love yall!!! <3 Good luck!!!
+New note: fuck all the ones who dont teach the code and just "uhhhh use this example". if you are making a video you should explain the code for others, sucker.
+WILL UPDATE IN A SECOND SO IT WILL TAKE YOU TO ANOTHER PAGE EFTER LOGGING (ethic ahh)
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  [ASCII by unknown]
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡘⢧⡀⠀⠀⢰⣶⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡾⠁⠀⠙⢦⡀⢸⡏⠻⢦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
